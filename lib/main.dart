@@ -1,5 +1,6 @@
 // import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:namaz/matcolorwhite.dart';
 import 'package:namaz/profile/mainscreen.dart';
 // import 'package:namaz/profile/mainscreen.dart';
 import 'namaz/namaz_screen.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       home: pv,
-      theme: ThemeData(fontFamily: 'Cooper-Hewitt', primarySwatch: Colors.cyan),
+      theme: ThemeData(primarySwatch: white),
     );
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../fileservice.dart';
-import 'time_widget.dart';
+import '../thintext.dart';
 
 class NamazScreen extends StatefulWidget {
   const NamazScreen({Key? key}) : super(key: key);
@@ -37,16 +37,17 @@ class NamazState extends State<NamazScreen> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Namaz Time'),
+          elevation: 0,
         ),
         body: Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.all(30),
           child: Column(
             children: [
-              TimeWidget(t: times[0]),
-              TimeWidget(t: times[1]),
-              TimeWidget(t: times[2]),
-              TimeWidget(t: times[3]),
-              TimeWidget(t: times[4]),
+              ThinText(times[0]),
+              ThinText(times[1]),
+              ThinText(times[2]),
+              ThinText(times[3]),
+              ThinText(times[4]),
               MaterialButton(onPressed: read, child: const Text('Get'))
             ],
             crossAxisAlignment: CrossAxisAlignment.stretch,
