@@ -1,8 +1,6 @@
-// import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:namaz/matcolorwhite.dart';
 import 'package:namaz/profile/mainscreen.dart';
-// import 'package:namaz/profile/mainscreen.dart';
 import 'namaz/namaz_screen.dart';
 
 void main() {

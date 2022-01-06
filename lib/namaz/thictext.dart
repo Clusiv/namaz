@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class ThinText extends StatelessWidget {
-  final String datatext;
-  const ThinText(this.datatext) : super();
+class ThicText extends StatelessWidget {
+  final String namazname;
+  const ThicText(this.namazname) : super();
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      datatext,
-      textAlign: TextAlign.right,
+      namazname,
+      textAlign: TextAlign.left,
       style: const TextStyle(
         fontFamily: 'Cooper-Hewitt',
         color: Colors.blue,
-        fontSize: 72,
-        fontWeight: FontWeight.w100,
+        fontSize: 32,
+        fontWeight: FontWeight.w900,
       ),
     );
   }
