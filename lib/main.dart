@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       controller: PageController(initialPage: 0),
       children: [
         const NamazScreen(),
-        Profile(),
+        // Profile(),
       ],
     );
 

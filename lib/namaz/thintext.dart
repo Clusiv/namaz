@@ -10,9 +10,9 @@ class ThinText extends StatelessWidget {
       datatext ?? '',
       textAlign: TextAlign.right,
       style: const TextStyle(
-        fontFamily: 'Cooper-Hewitt',
-        color: Colors.blue,
-        fontSize: 80,
+        // fontFamily: 'Cooper-Hewitt',
+        color: Colors.white,
+        fontSize: 72,
         fontWeight: FontWeight.w100,
       ),
     );

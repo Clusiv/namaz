@@ -73,6 +73,12 @@ class NamazState extends State<NamazScreen> {
           elevation: 0,
         ),
         body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/bgd.jpg"),
+              fit: BoxFit.fitHeight,
+            ),
+          ),
           padding: const EdgeInsets.all(20),
           child: Column(
             children: [

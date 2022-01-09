@@ -9,7 +9,8 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Namaz Time'),
+          title: const Text('Profile'),
+          elevation: 0,
         ),
         body: Container(
           padding: const EdgeInsets.all(10),
