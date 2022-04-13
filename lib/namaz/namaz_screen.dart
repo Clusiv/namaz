@@ -62,41 +62,37 @@ class NamazState extends State<NamazScreen> {
     var namazs = namazdata[curMonth]?[curday.toString()];
     times = [
       namazs?['1'],
+      namazs?['2'],
       namazs?['3'],
       namazs?['4'],
       namazs?['5'],
       namazs?['6'],
     ];
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Namaz Time'),
-          elevation: 0,
-        ),
+        // appBar: AppBar(
+        //   title: const Text('Namaz Time'),
+        //   elevation: 0,
+        // ),
         body: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/bgd.jpg"),
-              fit: BoxFit.fitHeight,
-            ),
-          ),
-          padding: const EdgeInsets.all(20),
-          child: Column(
-            children: [
-              // ThinText(times[0]),
-              // ThinText(times[1]),
-              // ThinText(times[2]),
-              // ThinText(times[3]),S
-              // ThinText(times[4]),
-              NamazRow('Fajr', times[0]),
-              NamazRow('Zuhr', times[1]),
-              NamazRow('Asr', times[2]),
-              NamazRow('Maghrib', times[3]),
-              NamazRow('Isha', times[4]),
-              // MaterialButton(onPressed: read, child: const Text('Get'))
-            ],
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          ),
-        ));
+      decoration: const BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/bgd.jpg"),
+          fit: BoxFit.fitHeight,
+        ),
+      ),
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        children: [
+          NamazRow('Fajr', times[0], namaztime2: times[1]),
+          NamazRow('Zuhr', times[2]),
+          NamazRow('Asr', times[3]),
+          NamazRow('Maghrib', times[4]),
+          NamazRow('Isha', times[5]),
+          // MaterialButton(onPressed: read, child: const Text('Get'))
+        ],
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      ),
+    ));
   }
 }
