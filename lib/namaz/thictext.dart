@@ -8,10 +8,10 @@ class ThicText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       namazname,
-      textAlign: TextAlign.justify,
+      textAlign: TextAlign.end,
       style: const TextStyle(
         // fontFamily: 'Cooper-Hewitt',
-        color: Colors.white,
+        color: Colors.black,
         fontSize: 24,
         fontWeight: FontWeight.w300,
       ),
